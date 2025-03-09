@@ -37,25 +37,33 @@ const App = () => {
 
     return (
         <div className="quiz-container">
-            <h1>Quiz App</h1>
+            <h1 className="quiz-title">Quiz App</h1>
             {shuffledQuizData.map((q, index) => (
-                <div key={index} className="question">
-                    <p><strong>Q{index + 1}:</strong> {q.question}</p>
+                <div key={index} className="question-box">  {/* Added container */}
+                    <p className="question-text"><strong>Q{index + 1}:</strong> {q.question}</p>
+
                     {q.type === "multiple-choice" ? (
                         q.options.map((option, i) => (
-                            <div key={i} className="option">
+                            <label key={i} className="option">
                                 <input type="radio" name={`q${index}`} value={i} /> {option}
-                            </div>
+                            </label>
                         ))
                     ) : (
-                        <textarea name={`q${index}`} rows="3" cols="50" onChange={(e) => handleWrittenChange(index, e.target.value)} />
+                        <textarea
+                            name={`q${index}`}
+                            className="text-area"
+                            rows="3"
+                            cols="50"
+                            onChange={(e) => handleWrittenChange(index, e.target.value)}
+                        />
                     )}
                 </div>
             ))}
             <button id="submit-btn" onClick={handleSubmit}>Submit Quiz</button>
+
             {score !== null && (
                 <div id="score">
-                    <p>Your Score: {score.correctAnswers} / {shuffledQuizData.filter(q => q.type === "multiple-choice").length}</p>
+                    <p className="score-text">Your Score: {score.correctAnswers} / {shuffledQuizData.filter(q => q.type === "multiple-choice").length}</p>
                     <h3>Written Answers:</h3>
                     {score.writtenResponses.map((resp, i) => (
                         <div key={i} className="written-response">

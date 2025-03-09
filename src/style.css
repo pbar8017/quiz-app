@@ -7,6 +7,9 @@ body {
   padding: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .container {
@@ -14,7 +17,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 90%;
   max-width: 800px;
 }
 
@@ -23,46 +26,12 @@ h1 {
   color: #333;
 }
 
-.question {
-  margin-bottom: 20px;
-  padding: 15px;
-  background: #e9ecef;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.option {
-  margin: 8px 0;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
-
 .option input {
   margin-right: 10px;
 }
 
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: none;
-  font-size: 16px;
-}
-
 button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  display: block;
-  width: 100%;
-  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
@@ -72,6 +41,7 @@ button:hover {
 /* Styles for the submit button and score display */
 #submit-btn {
   background-color: #28a745;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #submit-btn:hover {
@@ -84,4 +54,81 @@ button:hover {
   font-weight: bold;
   color: #333;
   margin-top: 20px;
+}
+
+/* Ensure the page layout is centered */
+.quiz-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each question */
+.question {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 5px solid #007bff;
+}
+
+/* Make sure inputs and text areas are well-spaced */
+textarea {
+  width: 90%;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Radio buttons spacing */
+.option {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Improve button styles */
+#submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .quiz-container {
+    width: 95%;
+    padding: 15px;
+  }
+  .question {
+    font-size: 16px;
+  }
+  textarea {
+    min-height: 60px;
+    width: 100%;
+  }
+  #submit-btn {
+    font-size: 16px;
+  }
 }
