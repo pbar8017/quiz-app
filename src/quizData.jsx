@@ -431,6 +431,261 @@ const quizData = [
     question: "Describe the difference between high-level functional requirements and detailed system specifications.",
     type: "written",
     answer: "High-level functional requirements describe the overall system behavior, while detailed specifications define implementation details."
+  },
+
+  {
+    question: "What is Requirement Analysis?",
+    type: "multiple-choice",
+    options: [
+      "The process of debugging software",
+      "The process of determining user needs and system requirements",
+      "The final step of software deployment",
+      "A marketing strategy for software"
+    ],
+    answer: 1
+  },
+  {
+    question: "Describe how requirements are analyzed in software development.",
+    type: "written",
+    answer: "Requirements are analyzed by development teams and decomposed into functional and non-functional requirements."
+  },
+  {
+    question: "Which of the following is NOT a step in Requirement Analysis?",
+    type: "multiple-choice",
+    options: [
+      "Gathering requirements",
+      "Analyzing documents",
+      "Developing the final product",
+      "Use case modeling"
+    ],
+    answer: 2
+  },
+
+  // Requirement Testing Questions
+  {
+    question: "What is the purpose of Requirements Testing?",
+    type: "multiple-choice",
+    options: [
+      "To evaluate if the system meets stakeholders' requirements",
+      "To debug software code",
+      "To design the user interface",
+      "To deploy the software"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which type of testing is Requirements Testing classified as?",
+    type: "multiple-choice",
+    options: [
+      "Unit Testing",
+      "Black-Box Testing",
+      "White-Box Testing",
+      "Integration Testing"
+    ],
+    answer: 1
+  },
+  {
+    question: "What does Requirements Testing check for?",
+    type: "multiple-choice",
+    options: [
+      "Compliance and correctness",
+      "System speed",
+      "Number of code lines",
+      "The software's color scheme"
+    ],
+    answer: 0
+  },
+  {
+    question: "Explain the purpose of Requirements Testing.",
+    type: "written",
+    answer: "Requirements Testing is a documentation-based testing method used to evaluate whether the system meets stakeholder requirements by checking for compliance, correctness, completeness, consistency, and usability."
+  },
+  {
+    question: "List the steps involved in Requirements Testing.",
+    type: "written",
+    answer: "Define the testing criteria, perform the testing, record the results, discuss the results with stakeholders, implement necessary changes."
+  },
+
+  // UML Use Case Diagram
+  {
+    question: "What is a UML Use Case Diagram?",
+    type: "multiple-choice",
+    options: [
+      "A database schema",
+      "A visual representation of system functions and actors",
+      "A coding standard",
+      "A testing strategy"
+    ],
+    answer: 1
+  },
+  {
+    question: "How do use cases help in software development?",
+    type: "written",
+    answer: "A use case is a sequence of actions that an actor performs to complete a given task. In agile, use cases are expressed as user stories that describe software features from a user's perspective."
+  },
+
+  // Object-Oriented Programming Principles
+  {
+    question: "Which of the following is NOT a principle of Object-Oriented Programming?",
+    type: "multiple-choice",
+    options: [
+      "Encapsulation",
+      "Abstraction",
+      "Polymorphism",
+      "Compilation"
+    ],
+    answer: 3
+  },
+  {
+    question: "Define Encapsulation in Object-Oriented Programming.",
+    type: "written",
+    answer: "Encapsulation restricts direct access to components of an object while using methods such as getters and setters."
+  },
+  {
+    question: "What does Abstraction help with in OOP?",
+    type: "multiple-choice",
+    options: [
+      "Hiding unnecessary details",
+      "Writing detailed code for every component",
+      "Increasing system complexity",
+      "Managing databases"
+    ],
+    answer: 0
+  },
+  {
+    question: "Describe Polymorphism in Object-Oriented Programming.",
+    type: "written",
+    answer: "Polymorphism allows an object to take many forms, enabling methods to be used interchangeably in different classes."
+  },
+  {
+    question: "What is Inheritance in Object-Oriented Programming?",
+    type: "multiple-choice",
+    options: [
+      "A process where a class derives properties from another class",
+      "A method to store data permanently",
+      "A function to debug a program",
+      "A feature used for encrypting software"
+    ],
+    answer: 0
+  },
+
+  // Additional Agile & SDLC Questions
+  {
+    question: "Which software development model follows an iterative approach with sprints?",
+    type: "multiple-choice",
+    options: [
+      "Waterfall Model",
+      "V-Model",
+      "Agile Model",
+      "Big Bang Model"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is the first phase of SDLC?",
+    type: "multiple-choice",
+    options: [
+      "Development",
+      "Design",
+      "Requirements",
+      "Testing"
+    ],
+    answer: 2
+  },
+  {
+    question: "Explain the concept of Use Case Modeling.",
+    type: "written",
+    answer: "Use case modeling organizes high-level system functions into a UML Use Case Diagram to visualize the functional requirements of the project."
+  },
+
+  // Compliance
+  {
+    question: "What does 'Compliance' mean in the context of requirement evaluation?",
+    type: "written",
+    answer: "Compliance refers to the degree to which the requirement follows industry standards."
+  },
+  {
+    question: "Which of the following best defines 'Compliance' in requirement evaluation?",
+    type: "multiple-choice",
+    options: [
+      "The requirement follows industry standards",
+      "The requirement is free from spelling mistakes",
+      "The requirement is detailed and includes all possible functionalities",
+      "The requirement is flexible for future modifications"
+    ],
+    answer: 0
+  },
+
+  // Correctness
+  {
+    question: "Define 'Correctness' in the context of requirement evaluation.",
+    type: "written",
+    answer: "Correctness refers to how accurate a requirement is in terms of spelling, grammar, and logical accuracy."
+  },
+  {
+    question: "Which aspect does 'Correctness' evaluate in a requirement?",
+    type: "multiple-choice",
+    options: [
+      "If the requirement follows security protocols",
+      "If the requirement is correctly spelled, grammatically sound, and accurate",
+      "If the requirement is mapped to user stories",
+      "If the requirement is complete and includes all functionalities"
+    ],
+    answer: 1
+  },
+
+  // Consistency
+  {
+    question: "What is the significance of 'Consistency' in requirements evaluation?",
+    type: "written",
+    answer: "Consistency refers to how well a requirement aligns with user stories and does not contradict other requirements."
+  },
+  {
+    question: "Which statement about 'Consistency' is true?",
+    type: "multiple-choice",
+    options: [
+      "Consistency ensures requirements do not contradict each other and align with user stories",
+      "Consistency ensures that the requirement is well-documented",
+      "Consistency means the requirement meets all legal and compliance standards",
+      "Consistency refers to the number of iterations required to refine a requirement"
+    ],
+    answer: 0
+  },
+
+  // Completeness
+  {
+    question: "What does 'Completeness' mean in requirement evaluation?",
+    type: "written",
+    answer: "Completeness means that the functional requirements fully align with the intended software functionality."
+  },
+  {
+    question: "Which of the following best defines 'Completeness'?",
+    type: "multiple-choice",
+    options: [
+      "The requirement includes all necessary functional aspects",
+      "The requirement follows formatting rules",
+      "The requirement is easy to modify",
+      "The requirement avoids redundancy"
+    ],
+    answer: 0
+  },
+
+  // Expandability
+  {
+    question: "What is 'Expandability' in the context of requirements evaluation?",
+    type: "written",
+    answer: "Expandability refers to how easily a requirement can be modified and improved to meet project objectives."
+  },
+  {
+    question: "Expandability in requirements evaluation focuses on:",
+    type: "multiple-choice",
+    options: [
+      "How well a requirement meets security guidelines",
+      "How adaptable a requirement is for future modifications",
+      "How a requirement is mapped to user needs",
+      "How thoroughly a requirement is documented"
+    ],
+    answer: 1
   }
 ];
 
