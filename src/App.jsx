@@ -33,7 +33,34 @@ const App = () => {
             }
         });
         setScore({ correctAnswers, writtenResponses });
+
+        const refreshButton = document.createElement("button");
+        refreshButton.innerText = "Restart Quiz";
+        refreshButton.id = "refresh-btn";
+        refreshButton.onclick = refreshQuiz;
+        document.body.appendChild(refreshButton);
     };
+
+    const refreshButtonStyle = document.createElement("style");
+    refreshButtonStyle.type = "text/css";
+    refreshButtonStyle.innerText = `
+    #refresh-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: #dc3545;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #refresh-btn:hover {
+        background-color: #c82333;
+    }
+`;
 
     return (
         <div className="quiz-container">
@@ -74,6 +101,7 @@ const App = () => {
                     ))}
                 </div>
             )}
+
         </div>
     );
 };

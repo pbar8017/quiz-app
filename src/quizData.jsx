@@ -178,7 +178,134 @@ const quizData = [
       "Testing"
     ],
     answer: 2
+  },
+
+  {
+    question: "What is the Software Development Lifecycle?",
+    type: "written",
+    answer: "SDLC is a set of activities and associated results that produce software. It is the methodology used by developers to implement the software development steps."
+  },
+  {
+    question: "Which of the following is NOT a phase of SDLC?",
+    type: "multiple-choice",
+    options: [
+      "Ideation",
+      "Requirements",
+      "Gaming",
+      "Deployment"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is the Waterfall Model?",
+    type: "written",
+    answer: "A sequential development process where each phase begins at the end of the previous one. It is called a linear model."
+  },
+  {
+    question: "What is the Agile Model?",
+    type: "written",
+    answer: "A repetitive iterative approach where tasks are completed in cyclical progressions known as sprints lasting 2 to 4 weeks each."
+  },
+  {
+    question: "Which model follows a linear progression in SDLC?",
+    type: "multiple-choice",
+    options: [
+      "Agile Model",
+      "Waterfall Model",
+      "Iterative Model",
+      "RAD Model"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which software development model follows sprints and iterations?",
+    type: "multiple-choice",
+    options: [
+      "Waterfall Model",
+      "V-Model",
+      "Agile Model",
+      "Big Bang Model"
+    ],
+    answer: 2
+  },
+  {
+    question: "Identify the correct order of the Waterfall Model phases.",
+    type: "multiple-choice",
+    options: [
+      "Requirements -> Development -> Design -> Testing -> Maintenance",
+      "Design -> Requirements -> Testing -> Development -> Deployment",
+      "Requirements -> Design -> Development -> Testing -> Deployment -> Maintenance",
+      "Testing -> Development -> Design -> Requirements -> Deployment"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is the first phase of SDLC?",
+    type: "multiple-choice",
+    options: [
+      "Development",
+      "Design",
+      "Requirements",
+      "Testing"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is a programming paradigm?",
+    type: "written",
+    answer: "A paradigm conceptualizes and structures the implementation of a computer program."
+  },
+  {
+    question: "Which of the following is an imperative programming paradigm?",
+    type: "multiple-choice",
+    options: [
+      "Functional Programming",
+      "Object-Oriented Programming",
+      "Declarative Programming",
+      "Event-Driven Programming"
+    ],
+    answer: 1
+  },
+  {
+    question: "What is procedural programming?",
+    type: "written",
+    answer: "Procedural programming divides a program into procedures or tasks, focusing on a step-by-step approach to solve a problem."
   }
 ];
 
+// Function to refresh the quiz
+function refreshQuiz() {
+  window.location.reload();
+}
+
 export default quizData;
+
+// Adding refresh button functionality to UI
+const refreshButton = document.createElement("button");
+refreshButton.innerText = "Restart Quiz";
+refreshButton.id = "refresh-btn";
+refreshButton.onclick = refreshQuiz;
+document.body.appendChild(refreshButton);
+
+const refreshButtonStyle = document.createElement("style");
+refreshButtonStyle.type = "text/css";
+refreshButtonStyle.innerText = `
+    #refresh-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: #dc3545;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #refresh-btn:hover {
+        background-color: #c82333;
+    }
+`;
+document.head.appendChild(refreshButtonStyle);
+

@@ -33,16 +33,20 @@ h1 {
 
 button {
   transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #0056b3;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* Styles for the submit button and score display */
 #submit-btn {
   background-color: #28a745;
-  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  margin-top: 15px;
 }
 
 #submit-btn:hover {
@@ -110,34 +114,37 @@ textarea {
   font-weight: bold;
   color: white;
   background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
 }
 
 #submit-btn:hover {
   background-color: #0056b3;
 }
 
-/* Responsive adjustments */
+/* Refresh Button */
+#refresh-btn {
+  display: block;
+  width: 50%; /* Reduced width */
+  padding: 8px; /* Smaller padding */
+  margin-top: 15px;
+  font-size: 16px; /* Reduced font size */
+  font-weight: bold;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#refresh-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Styling */
 @media (max-width: 600px) {
-  .quiz-container {
-    width: 100%;
-    padding: 15px;
-  }
-  .question {
-    font-size: 16px;
-    width: 100%;
-  }
-  textarea {
-    min-height: 60px;
-    width: 100%;
-  }
-  .option {
-    width: 100%;
-  }
-  #submit-btn {
-    font-size: 16px;
+  #refresh-btn {
+    width: 70%; /* Adjusted for smaller screens */
+    font-size: 14px;
   }
 }
