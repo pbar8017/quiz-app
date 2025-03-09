@@ -1047,6 +1047,474 @@ const quizData = [
     type: "multiple-choice",
     options: ["Compliance", "Correctness", "Completeness", "Deployment"],
     answer: 3
+  },
+
+  {
+    question: "Define UML and explain its purpose in software development.",
+    type: "written",
+    answer: "UML (Unified Modeling Language) is a standardized modeling language used in software engineering to visually represent system components, behaviors, and architecture."
+  },
+  {
+    question: "Describe the two main categories of UML diagrams and provide examples of each.",
+    type: "written",
+    answer: "The two main categories of UML diagrams are Structure Diagrams (e.g., Class Diagram, Object Diagram, Component Diagram) and Behavior Diagrams (e.g., Use Case Diagram, Sequence Diagram, Activity Diagram)."
+  },
+  {
+    question: "What are the benefits of using UML in system design?",
+    type: "written",
+    answer: "UML helps developers visualize system architecture, improve communication between stakeholders, validate system functionality, and document system behavior."
+  },
+  {
+    question: "Explain what a Use Case Diagram is and why it is used in system design.",
+    type: "written",
+    answer: "A Use Case Diagram visually represents how actors interact with a system to accomplish tasks, helping define functional requirements."
+  },
+  {
+    question: "List and describe the steps involved in Use Case Modeling.",
+    type: "written",
+    answer: "1. Identify Actors, 2. Define Use Cases, 3. Establish Relationships, 4. Draw the Use Case Diagram, 5. Validate with Stakeholders."
+  },
+  {
+    question: "What is the role of an actor in a Use Case Diagram?",
+    type: "written",
+    answer: "An actor represents an external entity (a user, system, or device) that interacts with the system."
+  },
+  {
+    question: "What is the difference between a primary actor and a secondary actor?",
+    type: "written",
+    answer: "A primary actor initiates system interactions, while a secondary actor supports or provides services to the system."
+  },
+
+  // Multiple Choice Questions
+  {
+    question: "Which of the following best describes UML?",
+    type: "multiple-choice",
+    options: [
+      "A programming language",
+      "A standardized modeling language for system design",
+      "A database query system",
+      "A type of project management methodology"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which of the following is NOT a UML diagram?",
+    type: "multiple-choice",
+    options: [
+      "Use Case Diagram",
+      "Class Diagram",
+      "Gantt Chart",
+      "Sequence Diagram"
+    ],
+    answer: 2
+  },
+  {
+    question: "What does a Use Case Diagram primarily capture?",
+    type: "multiple-choice",
+    options: [
+      "The functional requirements of a system",
+      "The physical architecture of a system",
+      "The database schema of a system",
+      "The internal coding structure"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following is NOT a step in Use Case Modeling?",
+    type: "multiple-choice",
+    options: [
+      "Identifying use cases",
+      "Defining system boundaries",
+      "Writing programming code",
+      "Establishing relationships between use cases and actors"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is an actor in a Use Case Diagram?",
+    type: "multiple-choice",
+    options: [
+      "A software component inside the system",
+      "A database table used for transactions",
+      "An entity (user, system, or device) interacting with the system",
+      "A programming function"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following is an example of a primary actor?",
+    type: "multiple-choice",
+    options: [
+      "A user purchasing a product on an e-commerce website",
+      "A payment processing system handling a transaction",
+      "A backup server storing system logs",
+      "An automated monitoring tool checking system status"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following is an example of a secondary actor?",
+    type: "multiple-choice",
+    options: [
+      "A customer placing an order",
+      "A bank’s fraud detection system verifying a transaction",
+      "A student logging into an educational portal",
+      "A user uploading a document"
+    ],
+    answer: 1
+  },
+  {
+    question: "What differentiates a Primary Actor from a Secondary Actor?",
+    type: "multiple-choice",
+    options: [
+      "Primary actors initiate the use case, while secondary actors support it",
+      "Secondary actors initiate the use case, while primary actors support it",
+      "Primary actors are always human users, while secondary actors are always systems",
+      "There is no difference between primary and secondary actors"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following describes a generalization relationship in a Use Case Diagram?",
+    type: "multiple-choice",
+    options: [
+      "One use case extends another",
+      "One actor inherits the behavior of another actor",
+      "Two use cases merge into one",
+      "An actor is deleted from the diagram"
+    ],
+    answer: 1
+  },
+  {
+    question: "If a Use Case must ALWAYS include another use case to function, what relationship should be used?",
+    type: "multiple-choice",
+    options: [
+      "Extend",
+      "Include",
+      "Association",
+      "Generalization"
+    ],
+    answer: 1
+  },
+  {
+    question: "Define a Use Case and explain why it is important in system design.",
+    type: "written",
+    answer: "A use case is a sequence of interactions between an actor and a system that achieves a specific goal. It helps define the functional requirements and expected system behavior."
+  },
+  {
+    question: "Describe the main components of a Use Case Model and provide an example.",
+    type: "written",
+    answer: "A Use Case Model consists of actors, use cases, system boundaries, and relationships. Example: An ATM System includes actors like 'Customer', use cases like 'Withdraw Cash', and relationships such as 'Includes: Authenticate User'."
+  },
+  {
+    question: "What is a System Boundary in Use Case Modeling? Why is it needed?",
+    type: "written",
+    answer: "A system boundary defines the scope of a system by separating internal processes from external interactions. It ensures clarity in defining what is inside the system and what interacts with it externally."
+  },
+  {
+    question: "Explain the difference between 'Include' and 'Extend' relationships in Use Case Modeling.",
+    type: "written",
+    answer: "'Include' represents mandatory functionality (e.g., 'Process Order' includes 'Validate Payment'), while 'Extend' represents optional behavior (e.g., 'Login' extends 'Forgot Password')."
+  },
+  {
+    question: "Give an example of a Generalization relationship in Use Case Modeling.",
+    type: "written",
+    answer: "A 'User' actor can generalize into 'Admin' and 'Customer', where 'Admin' has additional privileges but still shares core actions with 'Customer'."
+  },
+  {
+    question: "Describe the Incremental Development approach in Use Case Modeling and its benefits.",
+    type: "written",
+    answer: "Incremental development builds use cases gradually, refining requirements step by step. This allows better adaptability to changes and ensures accurate system modeling."
+  },
+  {
+    question: "List three essential tips for modeling use cases effectively.",
+    type: "written",
+    answer: "1. Keep use cases short and focused, 2. Define actions without specifying implementation, 3. Avoid excessive functional decomposition."
+  },
+  {
+    question: "What does CRUD stand for, and why are CRUD operations essential in system modeling?",
+    type: "written",
+    answer: "CRUD stands for Create, Read, Update, and Delete. These operations are essential for managing data entities in a system."
+  },
+  {
+    question: "Explain how CRUD operations are implemented in a user management system.",
+    type: "written",
+    answer: "A user management system includes use cases like 'Create User' (adding a new user), 'Read User' (retrieving user details), 'Update User' (modifying user information), and 'Delete User' (removing a user from the system)."
+  },
+
+  // Multiple Choice Questions
+  {
+    question: "Which statement best describes a Use Case?",
+    type: "multiple-choice",
+    options: [
+      "A programming framework for software design",
+      "A sequence of interactions between an actor and a system",
+      "A method to store and retrieve data in a database",
+      "A test case used in software testing"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which of the following is NOT a component of a Use Case Model?",
+    type: "multiple-choice",
+    options: [
+      "Actors",
+      "System Boundary",
+      "Database Tables",
+      "Use Cases"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which is an example of an Include Relationship in Use Case Modeling?",
+    type: "multiple-choice",
+    options: [
+      "'User Login' extends to 'Forgot Password'",
+      "'Process Order' includes 'Validate Payment'",
+      "'User' generalizes to 'Admin' and 'Customer'",
+      "'Withdraw Cash' includes 'Print Receipt'"
+    ],
+    answer: 1
+  },
+  {
+    question: "What is an Extend Relationship used for?",
+    type: "multiple-choice",
+    options: [
+      "To define an optional functionality in a use case",
+      "To merge two unrelated use cases",
+      "To enforce mandatory functionality in all scenarios",
+      "To indicate that a system function has been deprecated"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following best represents an example of Generalization in Use Case Modeling?",
+    type: "multiple-choice",
+    options: [
+      "'Place Order' includes 'Validate Payment'",
+      "'Login' extends to 'Forgot Password'",
+      "'User' generalizes to 'Admin' and 'Customer'",
+      "'Register User' is included in 'Create Account'"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is the primary function of a System Boundary in Use Case Modeling?",
+    type: "multiple-choice",
+    options: [
+      "To define the separation between the system and external actors",
+      "To represent a firewall for network security",
+      "To list all required system functionalities",
+      "To provide additional storage for system metadata"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following is NOT a best practice when modeling use cases?",
+    type: "multiple-choice",
+    options: [
+      "Keeping use cases concise and to the point",
+      "Using generalization to reduce redundancy",
+      "Defining system behavior without implementation details",
+      "Decomposing every function into multiple use cases regardless of complexity"
+    ],
+    answer: 3
+  },
+  {
+    question: "Which statement about CRUD Use Cases is TRUE?",
+    type: "multiple-choice",
+    options: [
+      "CRUD Use Cases are optional in system design",
+      "CRUD represents common operations like 'Create', 'Read', 'Update', and 'Delete'",
+      "CRUD Use Cases must always be extended by other use cases",
+      "CRUD Use Cases apply only to user authentication systems"
+    ],
+    answer: 1
+  },
+  {
+    question: "In a Use Case Model, what is the role of a Primary Actor?",
+    type: "multiple-choice",
+    options: [
+      "A system that provides data but does not initiate actions",
+      "An actor that interacts directly with the system to achieve a goal",
+      "An administrator who manages system configurations",
+      "A secondary user who only observes system operations"
+    ],
+    answer: 1
+  },
+  {
+    question: "What is a Secondary Actor in Use Case Modeling?",
+    type: "multiple-choice",
+    options: [
+      "An actor that directly initiates a system function",
+      "A supporting actor that provides services but does not initiate use cases",
+      "An actor that plays the main role in system interaction",
+      "An actor that is manually added to the system database"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "Define a Use Case and explain its purpose in system design.",
+    type: "written",
+    answer: "A use case is a sequence of interactions between an actor and a system that achieves a specific goal. It defines the functional requirements of a system."
+  },
+  {
+    question: "Provide an example of a Use Case Model and explain its components.",
+    type: "written",
+    answer: "An ATM Withdrawal use case includes actors (customer, bank system), system boundary, use cases (Enter PIN, Withdraw Cash), and relationships (Includes: Authenticate User, Extends: Print Receipt)."
+  },
+  {
+    question: "What is a System Boundary in Use Case Modeling?",
+    type: "written",
+    answer: "A system boundary defines the limits of the system by indicating what is inside and outside of it. It separates the system functions from external actors."
+  },
+  {
+    question: "Describe different types of Use Case relationships with examples.",
+    type: "written",
+    answer: "Use Case relationships include Include (e.g., 'Process Order' includes 'Validate Payment'), Extend (e.g., 'Login' extends to 'Forgot Password'), and Generalization (e.g., 'User' generalizes to 'Admin' and 'Customer')."
+  },
+  {
+    question: "Explain the Extend Relationship in Use Case Modeling with an example.",
+    type: "written",
+    answer: "An Extend relationship is used when an additional functionality is optional. For example, a 'Login' use case may extend to 'Two-Factor Authentication' only if security settings require it."
+  },
+  {
+    question: "What is Actor Generalization, and when is it used?",
+    type: "written",
+    answer: "Actor Generalization represents a hierarchical relationship where a general actor is specialized into multiple actors. Example: A 'User' actor can generalize into 'Admin' and 'Customer'."
+  },
+  {
+    question: "Describe the incremental development approach in Use Case Modeling.",
+    type: "written",
+    answer: "Incremental development involves building use cases step-by-step, refining and expanding models as more system requirements are understood."
+  },
+  {
+    question: "List key tips for modeling use cases effectively.",
+    type: "written",
+    answer: "1. Keep them short and simple, 2. Focus on WHAT not HOW, 3. Avoid functional decomposition, 4. Ensure actors and use cases are clearly defined."
+  },
+  {
+    question: "What are CRUD operations, and why are they important in system modeling?",
+    type: "written",
+    answer: "CRUD stands for Create, Read, Update, and Delete. These operations represent essential actions in data management, ensuring a system can manage records effectively."
+  },
+  {
+    question: "Explain how CRUD Use Cases are modeled in a system.",
+    type: "written",
+    answer: "CRUD use cases represent basic operations on data entities. Example: In a User Management System, 'Create User,' 'View User,' 'Edit User,' and 'Delete User' are modeled as use cases."
+  },
+
+  // Multiple Choice Questions
+  {
+    question: "Which of the following best defines a Use Case?",
+    type: "multiple-choice",
+    options: [
+      "A database table storing records",
+      "A sequence of actions between an actor and a system",
+      "A software development methodology",
+      "A security framework for system authentication"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which of the following is NOT a component of a Use Case Model?",
+    type: "multiple-choice",
+    options: [
+      "Actors",
+      "System Boundary",
+      "Database Schema",
+      "Use Cases"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which best describes a System Boundary in a Use Case Model?",
+    type: "multiple-choice",
+    options: [
+      "A physical network firewall",
+      "The separation between the system and external actors",
+      "A coding standard",
+      "A security rule for user access"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which of the following is an example of an Include Relationship?",
+    type: "multiple-choice",
+    options: [
+      "'Place Order' includes 'Validate Payment'",
+      "'Login' extends to 'Forgot Password'",
+      "'User' generalizes to 'Admin' and 'Customer'",
+      "'Process Loan' includes 'Approve Loan'"
+    ],
+    answer: 0
+  },
+  {
+    question: "When is an Extend Relationship used in Use Case Modeling?",
+    type: "multiple-choice",
+    options: [
+      "When additional functionality is always required",
+      "When an optional functionality is needed",
+      "When two use cases are merged",
+      "When actors share common attributes"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which statement about Generalization in Use Case Modeling is TRUE?",
+    type: "multiple-choice",
+    options: [
+      "It represents an optional use case",
+      "It is used to merge two systems",
+      "It shows hierarchical relationships between actors or use cases",
+      "It always requires external actors"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is a key advantage of Incremental Development in Use Case Modeling?",
+    type: "multiple-choice",
+    options: [
+      "It allows step-by-step refinement of use cases",
+      "It eliminates the need for system documentation",
+      "It replaces traditional system testing",
+      "It ensures all actors are removed from the diagram"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following is NOT a tip for modeling use cases?",
+    type: "multiple-choice",
+    options: [
+      "Keep use cases short and simple",
+      "Focus on what the system does, not how it works",
+      "Use functional decomposition to break down use cases",
+      "Ensure actors and use cases are clearly defined"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following best represents CRUD operations?",
+    type: "multiple-choice",
+    options: [
+      "Create, Read, Update, Delete",
+      "Compile, Run, Undo, Debug",
+      "Connect, Refresh, Upload, Download",
+      "Classify, Report, Upload, Distribute"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which is an example of a CRUD Use Case?",
+    type: "multiple-choice",
+    options: [
+      "'Create User', 'View User', 'Edit User', 'Delete User'",
+      "'Compile Code', 'Run Code', 'Test Code', 'Debug Code'",
+      "'Start Application', 'Close Application', 'Minimize Window', 'Maximize Window'",
+      "'Analyze Data', 'Report Data', 'Validate Data', 'Export Data'"
+    ],
+    answer: 0
   }
 ];
 
