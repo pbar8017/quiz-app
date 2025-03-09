@@ -123,10 +123,10 @@ textarea {
 /* Refresh Button */
 #refresh-btn {
   display: block;
-  width: 50%; /* Reduced width */
-  padding: 8px; /* Smaller padding */
+  width: 50%;
+  padding: 8px;
   margin-top: 15px;
-  font-size: 16px; /* Reduced font size */
+  font-size: 16px;
   font-weight: bold;
   color: white;
   background-color: #dc3545;
@@ -144,7 +144,74 @@ textarea {
 /* Responsive Styling */
 @media (max-width: 600px) {
   #refresh-btn {
-    width: 70%; /* Adjusted for smaller screens */
+    width: 70%;
     font-size: 14px;
   }
+}
+
+/* === Improved Styling for Written Answers Section === */
+#written-answers {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;  /* Align content to the left */
+  width: 100%;  /* Ensure full width */
+}
+
+.written-response {
+  background-color: #f8f9fa;
+  border-left: 5px solid #007bff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  text-align: left; /* Ensure text is left-aligned */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.written-response p {
+  margin: 5px 0;
+  font-size: 16px;
+  text-align: left; /* Ensures all text is aligned left */
+}
+
+.written-response strong {
+  color: #007bff;
+  display: block; /* Ensures strong elements are on separate lines */
+  text-align: left; /* Aligns the bold text to the left */
+}
+
+/* Improve the readability of the expected answer */
+.expected-answer {
+  color: #333;
+  font-weight: bold;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+/* Make 'Restart Quiz' button stand out */
+#restart-quiz {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#restart-quiz:hover {
+  background-color: #c82333;
 }

@@ -686,6 +686,367 @@ const quizData = [
       "How thoroughly a requirement is documented"
     ],
     answer: 1
+  },
+
+  {
+    question: "What is a use case?",
+    type: "multiple-choice",
+    options: [
+      "A sequence of steps describing how a system works internally",
+      "Something an actor wants the system to do, capturing functional requirements",
+      "A visual representation of the system’s architecture",
+      "A set of programming rules for writing efficient code"
+    ],
+    answer: 1
+  },
+  {
+    question: "Who initiates a use case?",
+    type: "multiple-choice",
+    options: [
+      "The system itself",
+      "A developer",
+      "An actor",
+      "A database administrator"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following statements about use cases is NOT true?",
+    type: "multiple-choice",
+    options: [
+      "A use case describes system behavior from an actor’s perspective",
+      "Use cases are written from the perspective of the system, not the user",
+      "A use case consists of actions a user performs to achieve a goal",
+      "Use cases reflect all possible events in a system related to an actor’s goal"
+    ],
+    answer: 1
+  },
+  {
+    question: "What does a complete set of use cases define?",
+    type: "multiple-choice",
+    options: [
+      "The system’s internal implementation details",
+      "All possible ways the system will behave and its functional requirements",
+      "A single step in a complex business process",
+      "The final testing process of the software"
+    ],
+    answer: 1
+  },
+  {
+    question: "Explain what a use case is and why it is important in software development.",
+    type: "written",
+    answer: "A use case is a description of how an actor interacts with a system to achieve a goal. It helps define functional requirements and provides a user-centered perspective on system behavior."
+  },
+  {
+    question: "Describe the relationship between actors and use cases. Why must use cases be written from the actor’s perspective?",
+    type: "written",
+    answer: "Actors initiate use cases by interacting with the system. Writing use cases from the actor’s perspective ensures that the system meets user needs and expectations."
+  },
+  {
+    question: "How do use cases help in defining the functional requirements of a system?",
+    type: "written",
+    answer: "Use cases define functional requirements by specifying the expected behavior of the system in different scenarios, ensuring that user needs are met."
+  },
+  {
+    question: "Give an example of a use case for an online shopping website.",
+    type: "written",
+    answer: "An example use case: 'As a customer, I want to add items to my shopping cart so that I can purchase multiple products at once.'"
+  },
+  {
+    question: "What are the key characteristics of a well-defined use case?",
+    type: "written",
+    answer: "A well-defined use case is clear, concise, actor-focused, goal-oriented, and includes all possible scenarios, including success and failure conditions."
+  },
+
+  {
+    question: "What is a key question to ask when identifying a use case?",
+    type: "multiple-choice",
+    options: [
+      "What programming language is used?",
+      "What functions will a specific actor want from the system?",
+      "How fast is the system’s processor?",
+      "What software version is currently running?"
+    ],
+    answer: 1
+  },
+  {
+    question: "Why is it important to determine whether the system stores or retrieves information when identifying a use case?",
+    type: "multiple-choice",
+    options: [
+      "To decide which programming language to use",
+      "To improve system security",
+      "To define functional requirements of the system",
+      "To estimate the cost of development"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following is NOT a consideration when identifying a use case?",
+    type: "multiple-choice",
+    options: [
+      "What happens when the system changes state?",
+      "Does the system generate any reports?",
+      "Who designed the user interface?",
+      "Does the system interact with any external system?"
+    ],
+    answer: 2
+  },
+  {
+    question: "What happens when a system changes state in the context of a use case?",
+    type: "multiple-choice",
+    options: [
+      "The system automatically shuts down",
+      "The system's behavior or data flow may change",
+      "The system's programming language changes",
+      "The system loses all stored data"
+    ],
+    answer: 1
+  },
+  {
+    question: "Why is it important to ask whether a system interacts with external systems?",
+    type: "multiple-choice",
+    options: [
+      "To determine system dependencies and integration points",
+      "To change the system’s programming language",
+      "To decide if the system should be deleted",
+      "To determine the cost of hardware components"
+    ],
+    answer: 0
+  },
+  {
+    question: "Explain the importance of identifying a use case before designing a system.",
+    type: "written",
+    answer: "Identifying use cases helps define the system's functional requirements, ensuring it meets user needs and business goals."
+  },
+  {
+    question: "How does identifying whether a system generates reports help in defining its use cases?",
+    type: "written",
+    answer: "Understanding report generation helps determine what data the system needs to collect, store, and process, defining key functionalities."
+  },
+  {
+    question: "Describe the relationship between system state changes and use case identification.",
+    type: "written",
+    answer: "System state changes impact workflows, requiring use cases to define expected behaviors and transitions between states."
+  },
+  {
+    question: "Why is it crucial to determine how a system interacts with external systems when identifying use cases?",
+    type: "written",
+    answer: "External system interactions affect integration, security, and dependencies, ensuring smooth data exchange and functionality."
+  },
+  {
+    question: "Provide an example of a user function that could be considered a use case.",
+    type: "written",
+    answer: "Example: 'As a user, I want to reset my password so that I can regain access to my account.'"
+  },
+
+  {
+    question: "What is a user story?",
+    type: "multiple-choice",
+    options: [
+      "A technical document detailing system architecture",
+      "A requirement linked to a process, product, service, or system",
+      "A contract between the developer and client",
+      "A step-by-step guide to coding software"
+    ],
+    answer: 1
+  },
+  {
+    question: "How are user stories typically planned in Agile development?",
+    type: "multiple-choice",
+    options: [
+      "Over multiple years",
+      "Only after full system development is complete",
+      "In a single iteration or sprint",
+      "After the product is launched"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following is a correct user story template?",
+    type: "multiple-choice",
+    options: [
+      "I want to complete a task so that it functions properly",
+      "As a [user], I want to [do something] so that [reason/benefit]",
+      "If I complete this task, then the system will work",
+      "The system must execute functions as expected"
+    ],
+    answer: 1
+  },
+  {
+    question: "Why might some user stories span multiple sprints?",
+    type: "multiple-choice",
+    options: [
+      "They require decomposition into smaller tasks",
+      "They are too simple for one sprint",
+      "They do not require developer input",
+      "They only apply to long-term projects"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the purpose of the 'So that' part in a user story?",
+    type: "multiple-choice",
+    options: [
+      "To define the coding logic",
+      "To describe the benefit or value for the user",
+      "To specify the system's hardware requirements",
+      "To list programming languages used"
+    ],
+    answer: 1
+  },
+  {
+    question: "Why is a user story written from a developer's perspective?",
+    type: "multiple-choice",
+    options: [
+      "To describe how to write the program",
+      "To express the functional or non-functional goal in the system",
+      "To estimate the time required for system testing",
+      "To document the programming structure"
+    ],
+    answer: 1
+  },
+  {
+    question: "Describe how a user story differs from a system requirement document.",
+    type: "written",
+    answer: "A user story is a simple, user-focused description of a requirement written from the user's perspective, while a system requirement document is a detailed technical specification outlining all aspects of system functionality."
+  },
+  {
+    question: "Provide an example of a user story using the template 'As a..., I want to..., so that...'.",
+    type: "written",
+    answer: "As a teacher, I want to access student records online so that I can update their grades easily."
+  },
+  {
+    question: "Explain why Agile uses user stories instead of traditional requirement documents.",
+    type: "written",
+    answer: "Agile uses user stories because they are flexible, user-centered, and adaptable to change, allowing teams to prioritize and break down requirements more effectively."
+  },
+  {
+    question: "How does breaking down user stories help in Agile development?",
+    type: "written",
+    answer: "Breaking down user stories allows teams to manage workload effectively, prioritize features, and ensure each task can be completed within a sprint."
+  },
+
+  // Agile vs Waterfall Questions
+  {
+    question: "According to the image, what percentage of Waterfall projects are considered successful?",
+    type: "multiple-choice",
+    options: ["39%", "11%", "29%", "52%"],
+    answer: 1
+  },
+  {
+    question: "What percentage of Agile projects are successful according to the image?",
+    type: "multiple-choice",
+    options: ["11%", "52%", "39%", "60%"],
+    answer: 2
+  },
+  {
+    question: "Which methodology has a lower failure rate according to the image?",
+    type: "multiple-choice",
+    options: ["Agile", "Waterfall", "Both have the same failure rate", "The image does not provide this information"],
+    answer: 0
+  },
+  {
+    question: "What is the percentage of challenged projects in the Waterfall methodology?",
+    type: "multiple-choice",
+    options: ["29%", "60%", "52%", "11%"],
+    answer: 1
+  },
+  {
+    question: "Why do you think Agile projects tend to be more successful than Waterfall projects based on the image?",
+    type: "written",
+    answer: "Agile allows for iterative development, adaptability, and continuous feedback, reducing project failure. Waterfall follows a rigid structure, making it difficult to address issues that arise during development."
+  },
+
+  // Requirement Analysis
+  {
+    question: "What is requirement analysis?",
+    type: "written",
+    answer: "Requirement analysis is the process of gathering, analyzing, and defining the requirements of a system to ensure it meets stakeholder needs."
+  },
+  {
+    question: "Which of the following is NOT a step in requirement analysis?",
+    type: "multiple-choice",
+    options: ["Gathering requirements", "Analyzing documents", "Identifying use cases", "Programming the system"],
+    answer: 3
+  },
+  {
+    question: "What does requirement testing involve?",
+    type: "multiple-choice",
+    options: ["Checking for compliance, correctness, completeness, and usability", "Writing user manuals", "Programming in Agile methodology", "Creating UML diagrams"],
+    answer: 0
+  },
+
+  // Use Case & UML Questions
+  {
+    question: "What is a use case?",
+    type: "written",
+    answer: "A use case is a sequence of actions that an actor performs to complete a given task within a system, capturing its functional requirements."
+  },
+  {
+    question: "Which of the following is NOT a characteristic of a use case?",
+    type: "multiple-choice",
+    options: ["Captures functional requirements", "Describes behavior from an actor’s perspective", "Specifies all ways the system will behave", "Defines database structure"],
+    answer: 3
+  },
+  {
+    question: "How can we identify a use case?",
+    type: "multiple-choice",
+    options: [
+      "By asking what functions an actor wants from the system",
+      "By identifying database tables",
+      "By checking system performance metrics",
+      "By defining Agile sprints"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is UML (Unified Modeling Language)?",
+    type: "written",
+    answer: "UML is a standardized set of diagrams that visually represent a software system's functions, actions, objects, and components."
+  },
+  {
+    question: "Which of the following is NOT a UML diagram type?",
+    type: "multiple-choice",
+    options: ["Class Diagram", "Use Case Diagram", "Flowchart Diagram", "Sequence Diagram"],
+    answer: 2
+  },
+
+  // Object-Oriented Programming (OOP) Questions
+  {
+    question: "Which principle of OOP restricts direct access to object components?",
+    type: "multiple-choice",
+    options: ["Encapsulation", "Abstraction", "Inheritance", "Polymorphism"],
+    answer: 0
+  },
+  {
+    question: "Describe the concept of polymorphism in OOP.",
+    type: "written",
+    answer: "Polymorphism allows an object to take on multiple forms, enabling methods to be overridden or reused across different classes."
+  },
+  {
+    question: "Which of the following OOP principles helps in code reusability?",
+    type: "multiple-choice",
+    options: ["Encapsulation", "Abstraction", "Inheritance", "Polymorphism"],
+    answer: 2
+  },
+
+  // Additional Questions
+  {
+    question: "What is the primary goal of requirement testing?",
+    type: "multiple-choice",
+    options: [
+      "To validate if the system meets stakeholder requirements",
+      "To check code syntax errors",
+      "To test system performance under load",
+      "To define programming languages used"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following criteria is NOT included in requirement testing?",
+    type: "multiple-choice",
+    options: ["Compliance", "Correctness", "Completeness", "Deployment"],
+    answer: 3
   }
 ];
 
