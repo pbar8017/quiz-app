@@ -10,6 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
+  width: 100%;
 }
 
 .container {
@@ -64,6 +65,7 @@ button:hover {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 /* Style for each question */
@@ -73,11 +75,12 @@ button:hover {
   border-radius: 8px;
   margin-bottom: 15px;
   border-left: 5px solid #007bff;
+  width: 100%;
 }
 
 /* Make sure inputs and text areas are well-spaced */
 textarea {
-  width: 90%;
+  width: 100%;
   min-height: 80px;
   padding: 10px;
   font-size: 16px;
@@ -85,6 +88,7 @@ textarea {
   border-radius: 5px;
   display: block;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* Radio buttons spacing */
@@ -93,6 +97,7 @@ textarea {
   align-items: center;
   margin: 5px 0;
   font-size: 16px;
+  width: 100%;
 }
 
 /* Improve button styles */
@@ -118,14 +123,18 @@ textarea {
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .quiz-container {
-    width: 95%;
+    width: 100%;
     padding: 15px;
   }
   .question {
     font-size: 16px;
+    width: 100%;
   }
   textarea {
     min-height: 60px;
+    width: 100%;
+  }
+  .option {
     width: 100%;
   }
   #submit-btn {
