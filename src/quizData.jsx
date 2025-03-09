@@ -270,6 +270,167 @@ const quizData = [
     question: "What is procedural programming?",
     type: "written",
     answer: "Procedural programming divides a program into procedures or tasks, focusing on a step-by-step approach to solve a problem."
+  },
+
+  {
+    question: "What is Requirement Analysis?",
+    type: "multiple-choice",
+    options: [
+      "The process of identifying and defining system requirements",
+      "Writing code for a software system",
+      "Designing the user interface of a system",
+      "Debugging errors in software"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following describes system properties or attributes and how a system should behave?",
+    type: "multiple-choice",
+    options: [
+      "Programming syntax",
+      "System Requirements",
+      "Algorithm complexity",
+      "Hardware specifications"
+    ],
+    answer: 1
+  },
+  {
+    question: "What are the two main types of requirements that development teams analyze?",
+    type: "multiple-choice",
+    options: [
+      "Hardware and software requirements",
+      "Functional and non-functional requirements",
+      "User experience and customer satisfaction",
+      "Back-end and front-end requirements"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which of the following is NOT a step in Requirement Analysis?",
+    type: "multiple-choice",
+    options: [
+      "Gathering requirements",
+      "Writing source code",
+      "Analyzing documents",
+      "Identifying use cases or user stories"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which technique is commonly used to gather requirements from stakeholders?",
+    type: "multiple-choice",
+    options: [
+      "Debugging",
+      "Conducting interviews and surveys",
+      "Writing test cases",
+      "Implementing user interfaces"
+    ],
+    answer: 1
+  },
+  {
+    question: "What is the purpose of analyzing documents during Requirement Analysis?",
+    type: "multiple-choice",
+    options: [
+      "To determine if the requirements are clear, complete, and consistent",
+      "To design a database schema",
+      "To develop test cases",
+      "To deploy the software to production"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is a use case?",
+    type: "multiple-choice",
+    options: [
+      "A programming function",
+      "A set of detailed instructions for coding",
+      "A sequence of actions performed by an actor to complete a task",
+      "A database table storing system attributes"
+    ],
+    answer: 2
+  },
+  {
+    question: "In Agile development, how are use cases often represented?",
+    type: "multiple-choice",
+    options: [
+      "As UML diagrams",
+      "As wireframes",
+      "As user stories",
+      "As flowcharts"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following best describes Use Case Modelling?",
+    type: "multiple-choice",
+    options: [
+      "Organizing high-level system functions into a UML Use Case Diagram",
+      "Writing the software code for system features",
+      "Debugging system errors before deployment",
+      "Designing a database schema"
+    ],
+    answer: 0
+  },
+  {
+    question: "Which of the following is NOT a method used in Gathering Requirements?",
+    type: "multiple-choice",
+    options: [
+      "Interviews with stakeholders",
+      "Surveys and feedback collection",
+      "Writing SQL queries",
+      "Observations of user behavior"
+    ],
+    answer: 2
+  },
+  {
+    question: "Explain what Requirement Analysis is and why it is important in software development.",
+    type: "written",
+    answer: "Requirement Analysis is the process of identifying, documenting, and analyzing the needs and constraints of a software system to ensure that it meets business and user needs."
+  },
+  {
+    question: "What are functional and non-functional requirements? Provide examples of each.",
+    type: "written",
+    answer: "Functional requirements define what the system should do, such as login functionality, while non-functional requirements describe system attributes like performance, security, and scalability."
+  },
+  {
+    question: "Describe the steps involved in Requirement Analysis and explain their purpose.",
+    type: "written",
+    answer: "Steps include Gathering Requirements, Analyzing Documents, Identifying Use Cases, and Use Case Modelling to ensure clarity and completeness."
+  },
+  {
+    question: "What are the key methods used in gathering requirements, and why are they essential?",
+    type: "written",
+    answer: "Methods include interviews, surveys, and stakeholder meetings to ensure all system needs are captured accurately."
+  },
+  {
+    question: "Explain how analyzing documents helps ensure the clarity and accuracy of system requirements.",
+    type: "written",
+    answer: "Document analysis verifies that requirements are clear, complete, and consistent, reducing errors and ambiguities."
+  },
+  {
+    question: "What is a use case? Provide an example of a real-world use case for a software application.",
+    type: "written",
+    answer: "A use case represents a sequence of user interactions with a system, such as an e-commerce checkout process."
+  },
+  {
+    question: "How does Use Case Modelling help visualize system requirements?",
+    type: "written",
+    answer: "It organizes system functions into a UML Use Case Diagram to provide a clear view of functional requirements."
+  },
+  {
+    question: "Why are user stories important in Agile development? Provide an example of a user story.",
+    type: "written",
+    answer: "User stories describe software features from a user's perspective, such as 'As a user, I want to reset my password so that I can access my account.'"
+  },
+  {
+    question: "What challenges can arise during Requirement Analysis, and how can they be addressed?",
+    type: "written",
+    answer: "Challenges include unclear requirements, stakeholder misalignment, and scope creep, which can be managed through iterative discussions and documentation."
+  },
+  {
+    question: "Describe the difference between high-level functional requirements and detailed system specifications.",
+    type: "written",
+    answer: "High-level functional requirements describe the overall system behavior, while detailed specifications define implementation details."
   }
 ];
 
