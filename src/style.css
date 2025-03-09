@@ -1,10 +1,7 @@
-/* quizStyles.css - Updated Styling for the Quiz Application */
-
+/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f8f9fa;
-  margin: 0;
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +10,7 @@ body {
   width: 100%;
 }
 
-.container {
+.quiz-container {
   background: white;
   padding: 30px;
   border-radius: 10px;
@@ -22,37 +19,60 @@ body {
   max-width: 800px;
 }
 
+/* Title */
 h1 {
   text-align: center;
   color: #333;
 }
 
-.option input {
-  margin-right: 10px;
+/* Question Box */
+.question-box {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 5px solid #007bff;
 }
 
-button {
-  transition: background-color 0.3s ease-in-out;
+/* Option Styling */
+.option {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Textarea Styling */
+.text-area {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Submit Button */
+#submit-btn {
+  width: 100%;
   padding: 12px;
+  margin-top: 10px;
   font-size: 18px;
   font-weight: bold;
+  color: white;
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
-}
-
-/* Styles for the submit button and score display */
-#submit-btn {
-  background-color: #28a745;
-  width: 100%;
-  margin-top: 15px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #submit-btn:hover {
-  background-color: #218838;
+  background-color: #0056b3;
 }
 
+/* Score Section */
 #score {
   text-align: center;
   font-size: 20px;
@@ -61,157 +81,46 @@ button {
   margin-top: 20px;
 }
 
-/* Ensure the page layout is centered */
-.quiz-container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+/* Incorrect Answers */
+#incorrect-answers {
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-}
-
-/* Style for each question */
-.question {
-  background-color: #e9ecef;
-  padding: 15px;
   border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.incorrect-response {
+  background-color: #ffebee;
+  border-left: 5px solid #dc3545;
+  padding: 15px;
   margin-bottom: 15px;
-  border-left: 5px solid #007bff;
-  width: 100%;
+  border-radius: 8px;
+  text-align: left;
 }
 
-/* Make sure inputs and text areas are well-spaced */
-textarea {
-  width: 100%;
-  min-height: 80px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-/* Radio buttons spacing */
-.option {
-  display: flex;
-  align-items: center;
+.incorrect-response p {
   margin: 5px 0;
   font-size: 16px;
-  width: 100%;
 }
 
-/* Improve button styles */
-#submit-btn {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  font-size: 18px;
+.user-answer {
+  color: #d9534f;
   font-weight: bold;
-  color: white;
-  background-color: #007bff;
 }
 
-#submit-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Refresh Button */
-#refresh-btn {
-  display: block;
-  width: 30%;
-  padding: 8px;
-  margin-top: 15px;
-  font-size: 16px;
+.correct-answer {
+  color: #28a745;
   font-weight: bold;
-  color: white;
-  background-color: #dc3545;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease-in-out;
 }
 
-#refresh-btn:hover {
-  background-color: #c82333;
-}
-
-/* Responsive Styling */
+/* Mobile-Friendly */
 @media (max-width: 600px) {
-  #refresh-btn {
-    width: 70%;
-    font-size: 14px;
+  .quiz-container {
+    width: 95%;
   }
-}
 
-/* === Improved Styling for Written Answers Section === */
-#written-answers {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-top: 20px;
-  text-align: left;  /* Align content to the left */
-  width: 90%;  /* Ensure full width */
-}
-
-.written-response {
-  background-color: #f8f9fa;
-  border-left: 5px solid #007bff;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  text-align: left; /* Ensure text is left-aligned */
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-}
-
-.written-response p {
-  margin: 5px 0;
-  font-size: 16px;
-  text-align: left; /* Ensures all text is aligned left */
-}
-
-.written-response strong {
-  color: #007bff;
-  display: block; /* Ensures strong elements are on separate lines */
-  text-align: left; /* Aligns the bold text to the left */
-}
-
-/* Improve the readability of the expected answer */
-.expected-answer {
-  color: #333;
-  font-weight: bold;
-  background-color: #e9ecef;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-
-/* Make 'Restart Quiz' button stand out */
-#restart-quiz {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  background-color: #dc3545;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease-in-out;
-}
-
-#restart-quiz:hover {
-  background-color: #c82333;
+  #submit-btn {
+    font-size: 16px;
+  }
 }
