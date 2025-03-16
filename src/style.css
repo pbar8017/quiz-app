@@ -1,15 +1,69 @@
-/* General Styles */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background Styling */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Modern blue gradient */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
   width: 100%;
+  color: #ffffff; /* Makes text stand out */
 }
 
+/* Starting Page Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.app-title, .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Modern Buttons */
+.quiz-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px; /* Modern rounded shape */
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Lifting effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Quiz Container */
 .quiz-container {
   background: white;
   padding: 30px;
@@ -17,11 +71,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 800px;
-}
-
-/* Title */
-h1 {
-  text-align: center;
   color: #333;
 }
 
@@ -122,5 +171,9 @@ h1 {
 
   #submit-btn {
     font-size: 16px;
+  }
+
+  .app-title, .section-title {
+    font-size: 2rem;
   }
 }
