@@ -984,4 +984,6 @@ const associationsQuiz = [
     }
 ];
 
+
+
 export default classesAndObjectsQuiz;
