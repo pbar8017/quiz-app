@@ -176,10 +176,13 @@
 }
 
 .quiz-container {
-    max-width: 800px; /* Increased width for better fit */
-    margin: auto; /* Centering */
+    max-width: 900px; /* Allow a little more space */
+    min-width: 350px; /* Prevent it from becoming too narrow */
+    width: 90%;
+    margin: auto;
     padding: 20px;
 }
+
 
 /* Your Answer - Separate Styling */
 .your-answer {
@@ -292,8 +295,11 @@
 /* Mobile Adjustments */
 @media (max-width: 600px) {
     .question-box {
-        padding: 15px;
+        width: 100%; /* Ensure it takes full width */
+        max-width: 800px; /* Prevents it from being too large */
+        margin: 0 auto; /* Centers it */
     }
+
     .your-answer, .correct-answer {
         font-size: 0.9rem;
         padding: 8px;
@@ -320,9 +326,13 @@
     }
 
     .option {
-        font-size: 1rem;
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%; /* Ensure full width */
+        max-width: 600px; /* Prevents excessive stretching */
     }
+
 
     .button-group {
         gap: 10px;
@@ -332,6 +342,8 @@
 .option {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    max-width: 600px
     background: white;
     border: 2px solid #ddd;
     border-radius: 10px;
