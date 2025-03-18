@@ -93,9 +93,10 @@ export default function FullQuiz() {
                                                     type="radio"
                                                     name={`question-${index}`}
                                                     value={optionIndex}
+                                                    checked={answers[index] === optionIndex} // ✅ Ensures the selected option stays highlighted
                                                     onChange={() => handleChange(index, optionIndex)}
                                                 />
-                                                {option}
+                                                <span>{option}</span> {/* ✅ Wraps text for better clickability */}
                                             </label>
                                         ))}
                                     </div>
